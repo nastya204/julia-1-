@@ -15,3 +15,5 @@ function spiral!(stop_condition::Function, robot, side = Nord)
         n += 1
     end
 end
+
+left(side::HorizonSide)::HorizonSide = HorizonSide(mod(Int(side)-1, 4))
